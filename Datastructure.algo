@@ -1,0 +1,37 @@
+ALGORITHM Problem1
+VAR
+    set1 := [3, 1, 7, 9]
+    set2:= [2, 4, 1, 9, 3]
+    sum : INTEGER := 0;
+    i : INTEGER
+    j : INTEGER
+BEGIN
+    FOR i FROM 0 TO set1.length-1 STEP 1  DO
+    FOR j FROM 0 TO set2.length-1 STEP 1  DO
+        IF (set1[i]=set2[j]) THEN
+            BREAK
+        ELSE
+        sum := set1[i] + set2[j]
+        write(sum);
+        END_IF
+    END_FOR
+    END_FOR
+END
+
+
+
+
+
+
+
+PROCEDURE dot_product(v1,v2)
+VAR
+    v1 : INTEGER
+    v2 : INTEGER
+    ps : INTEGER
+BEGIN
+    Read(ps = v1 * v2)
+    IF (ps=0) THEN
+        write ("The dot product is orthogonal")
+    END_IF
+END
