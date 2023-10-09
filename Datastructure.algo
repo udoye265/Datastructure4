@@ -1,7 +1,7 @@
 ALGORITHM Problem1
 VAR
-    set1 := [3, 1, 7, 9]
-    set2:= [2, 4, 1, 9, 3]
+    set1 : ARRAY_OF INTEGER[4];
+    set2 : ARRAY_OF INTEGER[4];
     sum : INTEGER := 0;
     i : INTEGER
     j : INTEGER
